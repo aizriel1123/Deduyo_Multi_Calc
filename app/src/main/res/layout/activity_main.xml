@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".controller.view.MainActivity">
+
+
+
+    <Button
+        android:id="@+id/physics"
+        android:layout_width="250dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="236dp"
+        android:backgroundTint="@color/black"
+        android:text="@string/physics"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/geometry"
+        android:layout_width="250dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="56dp"
+        android:backgroundTint="@color/black"
+        android:text="@string/geometry"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/physics"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/physics"
+        app:layout_constraintTop_toBottomOf="@+id/physics"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/weight"
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="@color/black"
+        android:text="@string/weight"
+        app:layout_constraintEnd_toEndOf="@+id/force"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/force"
+        app:layout_constraintTop_toBottomOf="@+id/force" />
+
+    <Button
+        android:id="@+id/cylinder"
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/black"
+        android:text="@string/cylinder"
+        app:layout_constraintEnd_toEndOf="@+id/sphere"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/sphere"
+        app:layout_constraintTop_toBottomOf="@+id/sphere"
+        tools:ignore="DuplicateClickableBoundsCheck" />
+
+    <Button
+        android:id="@+id/density"
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="36dp"
+        android:backgroundTint="@color/black"
+        android:text="@string/density"
+        app:layout_constraintEnd_toEndOf="@+id/weight"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/weight"
+        app:layout_constraintTop_toBottomOf="@+id/weight" />
+
+    <Button
+        android:id="@+id/cone"
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="144dp"
+        android:backgroundTint="@color/black"
+        android:text="@string/cone"
+        app:layout_constraintEnd_toEndOf="@+id/cylinder"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/cylinder"
+        app:layout_constraintTop_toBottomOf="@+id/cylinder"
+        tools:ignore="DuplicateClickableBoundsCheck" />
+
+    <Button
+        android:id="@+id/hemisphere"
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="116dp"
+        android:backgroundTint="@color/black"
+        android:text="@string/hemisphere"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.957"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="DuplicateClickableBoundsCheck" />
+
+    <Button
+        android:id="@+id/velocity"
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="92dp"
+        android:backgroundTint="@color/black"
+        android:text="@string/velocity"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.009"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/sphere"
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="36dp"
+        android:backgroundTint="@color/black"
+        android:text="@string/sphere"
+        app:layout_constraintEnd_toEndOf="@+id/hemisphere"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/hemisphere"
+        app:layout_constraintTop_toBottomOf="@+id/hemisphere"
+        tools:ignore="DuplicateClickableBoundsCheck" />
+
+    <Button
+        android:id="@+id/voltage"
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:backgroundTint="@color/black"
+        android:text="@string/voltage"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/density"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/density"
+        app:layout_constraintTop_toBottomOf="@+id/density"
+        app:layout_constraintVertical_bias="0.2"
+        tools:ignore="DuplicateClickableBoundsCheck" />
+
+    <Button
+        android:id="@+id/force"
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="166dp"
+        android:layout_marginEnd="209dp"
+        android:layout_marginBottom="495dp"
+        android:backgroundTint="@color/black"
+        android:text="@string/force"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/back1"
+        android:layout_width="104dp"
+        android:layout_height="50dp"
+        android:background="@color/black"
+        android:text="@string/back"
+        app:backgroundTint="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.941"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

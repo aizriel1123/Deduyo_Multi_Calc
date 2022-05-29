@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <EditText
+        android:id="@+id/input1"
+        android:layout_width="170dp"
+        android:layout_height="50dp"
+        android:autofillHints=""
+        android:hint="@string/input"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toBottomOf="@+id/x1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/x1"
+        app:layout_constraintTop_toTopOf="@+id/x1"
+        tools:ignore="DuplicateSpeakableTextCheck,TextContrastCheck" />
+
+    <EditText
+        android:id="@+id/input2"
+        android:layout_width="170dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:autofillHints=""
+        android:hint="@string/input"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toBottomOf="@+id/x2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.117"
+        app:layout_constraintStart_toEndOf="@+id/x2"
+        app:layout_constraintTop_toTopOf="@+id/x2"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/x1"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="124dp"
+        android:text="@string/formula"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.125"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/x2"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="@string/formula"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="@+id/x1"
+        app:layout_constraintStart_toStartOf="@+id/x1"
+        app:layout_constraintTop_toBottomOf="@+id/x1" />
+
+    <TextView
+        android:id="@+id/x3"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:text="@string/formula"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="@+id/x2"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/x2"
+        app:layout_constraintTop_toBottomOf="@+id/x2" />
+
+    <TextView
+        android:id="@+id/answer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="@+id/x3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.106"
+        app:layout_constraintStart_toEndOf="@+id/x3"
+        app:layout_constraintTop_toTopOf="@+id/x3"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="92dp"
+        android:backgroundTint="@color/black"
+        android:text="@string/calculate"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="@+id/x3"
+        app:layout_constraintStart_toStartOf="@+id/x3"
+        app:layout_constraintTop_toTopOf="@+id/x3"
+        tools:ignore="TextContrastCheck" />
+
+    <Button
+        android:id="@+id/back2"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:backgroundTint="@color/black"
+        android:text="@string/back"
+        app:layout_constraintBottom_toBottomOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button"
+        app:layout_constraintTop_toTopOf="@+id/button"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

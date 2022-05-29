@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/shape"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:text="@string/hemisphere"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/y1"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="@string/formula"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="@+id/y5"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/y5"
+        app:layout_constraintTop_toBottomOf="@+id/y5" />
+
+    <TextView
+        android:id="@+id/y2"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/formula"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="@+id/y3"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/y3"
+        app:layout_constraintTop_toBottomOf="@+id/y3" />
+
+    <TextView
+        android:id="@+id/y3"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="@string/formula"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="@+id/y1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/y1"
+        app:layout_constraintTop_toBottomOf="@+id/y1" />
+
+    <TextView
+        android:id="@+id/y5"
+        android:layout_width="164dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="42dp"
+        android:text="@string/area"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="@+id/y4"
+        app:layout_constraintStart_toStartOf="@+id/y4"
+        app:layout_constraintTop_toBottomOf="@+id/y4" />
+
+    <EditText
+        android:id="@+id/inputII"
+        android:layout_width="170dp"
+        android:layout_height="50dp"
+        android:autofillHints=""
+        android:hint="@string/input"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toBottomOf="@+id/y2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/y2"
+        app:layout_constraintTop_toTopOf="@+id/y2"
+        tools:ignore="DuplicateSpeakableTextCheck,TextContrastCheck" />
+
+    <EditText
+        android:id="@+id/inputI"
+        android:layout_width="170dp"
+        android:layout_height="50dp"
+        android:autofillHints=""
+        android:hint="@string/input"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toBottomOf="@+id/y1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/y1"
+        app:layout_constraintTop_toTopOf="@+id/y1"
+        tools:ignore="DuplicateSpeakableTextCheck,TextContrastCheck" />
+
+    <EditText
+        android:id="@+id/inputIII"
+        android:layout_width="170dp"
+        android:layout_height="50dp"
+        android:autofillHints=""
+        android:hint="@string/input"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toBottomOf="@+id/y3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/y3"
+        app:layout_constraintTop_toTopOf="@+id/y3"
+        tools:ignore="DuplicateSpeakableTextCheck,TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/answer1"
+        android:layout_width="115dp"
+        android:layout_height="21dp"
+        android:text=""
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="@+id/y4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.388"
+        app:layout_constraintStart_toEndOf="@+id/y4"
+        app:layout_constraintTop_toTopOf="@+id/y4"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/y4"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/volume"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="@+id/shape"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/shape"
+        app:layout_constraintTop_toBottomOf="@+id/shape" />
+
+    <TextView
+        android:id="@+id/answer2"
+        android:layout_width="130dp"
+        android:layout_height="31dp"
+        android:text=""
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="@+id/y5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.35"
+        app:layout_constraintStart_toEndOf="@+id/y5"
+        app:layout_constraintTop_toTopOf="@+id/y5"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/calculate"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="80dp"
+        android:backgroundTint="@color/black"
+        android:text="@string/calculate"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="@+id/y2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/y2"
+        app:layout_constraintTop_toBottomOf="@+id/y2"
+        tools:ignore="TextContrastCheck" />
+
+    <Button
+        android:id="@+id/back3"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:backgroundTint="@color/black"
+        android:text="@string/back"
+        app:layout_constraintBottom_toBottomOf="@+id/calculate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.515"
+        app:layout_constraintStart_toEndOf="@+id/calculate"
+        app:layout_constraintTop_toTopOf="@+id/calculate"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

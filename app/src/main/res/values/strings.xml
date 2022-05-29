@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Deduyo_Multi_Calc</string>
+    <string name="physics">PHYSICS</string>
+    <string name="geometry">GEOMETRY</string>
+    <string name="velocity">VELOCITY</string>
+    <string name="hemisphere">CAPSULE</string>
+    <string name="force">FORCE</string>
+    <string name="sphere">SPHERE</string>
+    <string name="weight">WEIGHT</string>
+    <string name="cylinder">CYLINDER</string>
+    <string name="density">DENSITY</string>
+    <string name="cone">CONE</string>
+    <string name="voltage">VOLTAGE</string>
+    <string name="formula">Acceleration</string>
+    <string name="input">Input Number…</string>
+    <string name="calculate">Calculate</string>
+    <string name="volume">Volume:</string>
+    <string name="area">Area:</string>
+    <string name="back">back</string>
+    <string name="todo">TODO</string>
+</resources>
